@@ -24,8 +24,12 @@
     </svg>
 
     <header>
-        <h1><a href="https://matomeyapoke.com" id="site-title">構築まとめ屋。</a></h1>
-        <form id="search-bar" action="https://matomeyapoke.com/search.php" method="get">
+        <h1>
+            <a href="index.php">
+                <img src="{{ url_for('static', filename='matomeyapoke.png') }}" class="header_img">
+            </a>
+        </h1>
+        <form id="search-bar" action="https://matomeyapoke.com/" method="get">
             <input type="text" id="search-input" class="pokemon_input" name="pokemon0" autocomplete="off"
                 placeholder="ポケモン名で検索">
             <button type="submit" id="search-icon">
@@ -36,7 +40,7 @@
 
     <div class="fruit-tart">
         <div class="tart">
-            <h2>その他のフォーム</h2>
+            <h2 style="border-bottom: 3px solid #b2d5de;">その他のフォーム</h2>
             <div class="package">
                 <div id="form">
                     <p>このページではランクバトル以外の構築やシーズン途中の構築を収集しています。最終順位が確定しているランクバトルの構築は「構築収集フォーム」から投稿してください。</p>
@@ -63,10 +67,23 @@
                                 id="single">シングル</label>
                         <label><input type="checkbox" name="rule[]" class="check" value="double"
                                 id="double">ダブル</label><br>
-                        <label for="url">記事URL<span style="color: red;">*</span>：</label>
+                        <label for="url">記事URL<span style="color: red;">*</span><span id="url_x">：</span></label>
                         <input type="text" id="url" name="url" autocomplete="off"><br>
-                        <label for="name">制作者名<span style="color: red;">*</span>：</label>
+                        <label for="name">制作者名<span style="color: red;">*</span><span id="name_x">：</span></label>
                         <input type="text" id="name" name="name" autocomplete="off"><br>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                var urlElement = document.getElementById('url');
+                                var nameElement = document.getElementById('name');
+                                var urlX = urlElement.getBoundingClientRect().left;
+                                var nameX = nameElement.getBoundingClientRect().left;
+                                var offsetX = nameX - urlX;
+
+                                // id="url_x"の位置をid="name_x"に合わせる
+                                var urlXElement = document.getElementById('url_x');
+                                urlXElement.style.marginLeft = offsetX + 'px';
+                            });
+                        </script>
 
                         <p>
                             仲間大会の場合は該当するレギュレーションを選択してください。
