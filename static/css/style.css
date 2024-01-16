@@ -1,0 +1,181 @@
+.blue {
+  color: #007fff;
+}
+
+.content span {
+  color: red;
+}
+
+select,
+#file-input {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+select option {
+  padding: 50px 0px;
+}
+
+.content {
+  width: calc(100% - 32px);
+  max-width: 640px;
+  background-color: #fff;
+  margin: 16px auto;
+  padding: 16px;
+}
+
+.content div {
+  margin-bottom: 16px;
+}
+
+#party_form div {
+  margin-bottom: 12px;
+}
+
+#post {
+  width: 100%;
+  margin-top: 4px;
+  padding: 10px;
+  border-radius: 5px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #4486e3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#file-input::file-selector-button {
+  height: 32px;
+  padding: 0px 8px;
+  border-radius: 5px;
+  line-height: 30px;
+  border: #ccc 1px solid;
+  cursor: pointer;
+}
+
+#rule,
+#regulation,
+#url,
+#name,
+#ranking,
+#event {
+  height: 32px;
+  width: 100%;
+  padding: 0px 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  outline: none;
+}
+
+#ranking {
+  width: 50%;
+}
+
+.suggestions {
+  margin-bottom: 0 !important;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #777;
+  border-top: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.suggestion {
+  margin-bottom: 0 !important;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestion:hover {
+  background-color: #007fff;
+  color: #fff;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#party_form {
+  max-width: 508px;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.poke_input,
+.tool_input,
+.teras_input {
+  width: 100%;
+  height: 32px;
+  padding: 0px 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.poke_input::placeholder,
+.tool_input::placeholder,
+.teras_input::placeholder {
+  color: #aaa;
+}
+
+.poke_input {
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.tool_input {
+  border-right: none;
+}
+
+.teras_input {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media screen and (max-width: 560px) {
+  .poke_input {
+    border-right: 1px solid #ccc;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    flex: initial;
+  }
+
+  .tool_input {
+    border-top: none;
+    border-bottom-left-radius: 5px;
+  }
+
+  .teras_input {
+    border-top: none;
+    border-top-right-radius: 0px;
+  }
+}
+
+.ui-menu .ui-menu-item-wrapper {
+  position: relative;
+  padding: 8px 1em 8px .4em;
+}
+
+.ui-widget-content {
+  border: 1px solid #777 !important;
+  border-top: 1px solid #ccc !important;
+}
+
+.suggestions {
+  margin-top: 31px;
+}
+
+.red-background {
+  background-color: #ff9393;
+  border: 1px solid #aaa;
+}
