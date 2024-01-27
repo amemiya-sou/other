@@ -140,7 +140,7 @@ $(document).ready(function () {
         }
 
         if (flags.rule && flags.regulation && flags.url && flags.name && flags.rule && flags.red) {
-            var confirmed = confirm("入力した内容で送信しますか？");
+            var confirmed = confirm("入力した内容で投稿しますか？");
             if (!confirmed) {
                 event.preventDefault();
             }
