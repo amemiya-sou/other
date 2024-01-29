@@ -68,6 +68,11 @@
             <h3>シングル記事まとめ</h3>
             <ul class="menu-links">
                 <li>
+                    <a href="https://matomeyapoke.com/season.php?season=14&rule=single">
+                        <span>SVシーズン14シングル上位記事</span>
+                    </a>
+                </li>
+                <li>
                     <a href="https://matomeyapoke.com/season.php?season=13&rule=single">
                         <span>SVシーズン13シングル上位記事</span>
                     </a>
@@ -77,17 +82,17 @@
                         <span>SVシーズン12シングル上位記事</span>
                     </a>
                 </li>
-                <li>
-                    <a href="https://matomeyapoke.com/season.php?season=11&rule=single">
-                        <span>SVシーズン11シングル上位記事</span>
-                    </a>
-                </li>
             </ul>
         </div>
 
         <div class="menu-box">
             <h3>ダブル記事まとめ</h3>
             <ul class="menu-links">
+                <li>
+                    <a href="https://matomeyapoke.com/season.php?season=14&rule=double">
+                        <span>SVシーズン14ダブル上位記事</span>
+                    </a>
+                </li>
                 <li>
                     <a href="https://matomeyapoke.com/season.php?season=13&rule=double">
                         <span>SVシーズン13ダブル上位記事</span>
@@ -96,11 +101,6 @@
                 <li>
                     <a href="https://matomeyapoke.com/season.php?season=12&rule=double">
                         <span>SVシーズン12ダブル上位記事</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://matomeyapoke.com/season.php?season=11&rule=double">
-                        <span>SVシーズン11ダブル上位記事</span>
                     </a>
                 </li>
             </ul>
@@ -140,9 +140,9 @@
     </div>
 
     <div class="content">
-        <div>このページではランクバトル以外の構築やシーズン途中の構築を投稿できます。最終順位が確定したランクバトルの構築は<a class="blue"
+        <div>ここではシーズン途中の構築やランクバトル以外の構築を投稿できます。最終順位が確定したランクバトルの構築は<a class="blue"
                 href="https://pokemon-3lix.onrender.com/">構築投稿フォーム</a>から投稿してください。</div>
-        <div>レンタル画像からポケモン名などを自動で読み取れます。こちらを利用して可能な限り多くの項目に入力していただけると助かります。</div>
+        <div>レンタル画像からポケモン名などを自動で読み取れます。</div>
 
         <div>
             <form method="post" enctype="multipart/form-data" id="upload-form">
@@ -155,11 +155,11 @@
             <input type="text" id="approval" name="approval" style="display: none;" value="false">
 
             <div>
-                <span>*は必須項目です。</span>
+                <span class="required">*は必須項目です。</span>
             </div>
 
             <div>
-                <label for="rule">ルール<span>*</span></label>
+                <label for="rule">ルール<span class="required">*</span></label>
                 <select name="rule" id="rule">
                     <option value="">-----</option>
                     <option value="single">シングル</option>
@@ -168,17 +168,17 @@
             </div>
 
             <div>
-                <label for="url">記事URL<span>*</span></label>
+                <label for="url">記事URL<span class="required">*</span></label>
                 <input type="search" id="url" name="url" autocomplete="off">
             </div>
 
             <div>
-                <label for="name">制作者名<span>*</span><span id="name_x"></span></label>
+                <label for="name">制作者名<span class="required">*</span><span id="name_x"></span></label>
                 <input type="search" id="name" name="name" autocomplete="off">
             </div>
 
             <div style="margin: 16px auto;">
-                仲間大会の場合は該当するレギュレーションを選択してください。いずれのレギュレーションや公式大会にも当てはまらない場合は「公式大会など」から「その他」を選択してください。
+                該当するレギュレーションもしくは大会名を選択してください。いずれのレギュレーションや公式大会にも当てはまらない場合は「公式大会など」から「その他」を選択してください。
             </div>
 
             <div>
@@ -199,8 +199,8 @@
                 <select name="event" id="event" onchange="updateSelect('event', 'regulation')">
                     <option value="">-----</option>
                     <option value="other">その他</option>
-                    <option value="blueberry">ブルーベリープロローグ</option>
                     <option value="ryuuou2024">竜王戦2024予選</option>
+                    <option value="blueberry">ブルーベリープロローグ</option>
                     <option value="trick">トリックマジック</option>
                     <option value="kitakami">キタカミプロローグ</option>
                     <option value="parudea">パルデアプロローグ</option>
